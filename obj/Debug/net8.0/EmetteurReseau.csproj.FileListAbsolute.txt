@@ -1,0 +1,14 @@
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\bin\Debug\net8.0\EmetteurReseau.exe
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\bin\Debug\net8.0\EmetteurReseau.deps.json
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\bin\Debug\net8.0\EmetteurReseau.runtimeconfig.json
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\bin\Debug\net8.0\EmetteurReseau.dll
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\bin\Debug\net8.0\EmetteurReseau.pdb
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.AssemblyInfoInputs.cache
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.AssemblyInfo.cs
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.csproj.CoreCompileInputs.cache
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.dll
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\refint\EmetteurReseau.dll
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.pdb
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.genruntimeconfig.cache
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\ref\EmetteurReseau.dll
