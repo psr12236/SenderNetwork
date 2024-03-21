@@ -8,38 +8,28 @@ namespace EmetteurReseau
     {
         static async Task Main(string[] args)
         {
-            //Console.WriteLine("Hello and welcome!");
-            //Console.WriteLine("Give me the path of the file you want to send:");
-            //string path = Console.ReadLine();
-
-            //if (!File.Exists(path))
-            //{
-            //    Console.WriteLine("The file does not exist. Please check the path and try again.");
-            //    return;
-            //}
-
-            var pathsToTest = new List<string>
+            if (args.Length < 3)
             {
-                "C:\\Users\\marcl\\Desktop\\ManipGit.txt",
-                @"C:\Users\marcl\Desktop\ManipGit.txt",
-                Path.Combine("C:", "Users", "marcl", "Desktop", "ManipGit.txt"),
-                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ManipGit.txt")
-            };
+                Console.WriteLine("Utilisation: EmetteurReseau.exe <adresse IP> <port> <chemin du fichier>");
+                return;
+            }
 
-            string validPath = pathsToTest.FirstOrDefault(File.Exists);
+            string ip = args[0];
+            int port = int.Parse(args[1]);
+            string filePath = args[2];
 
-            if (validPath == null)
+            if (!File.Exists(filePath))
             {
-                Console.WriteLine("The file does not exist. Please check the paths and try again.");
+                Console.WriteLine("Le fichier n'existe pas. Veuillez vérifier le chemin et réessayer.");
                 return;
             }
 
             try
             {
-                EmetteurUDP emetteur = new EmetteurUDP("localhost", 9876, validPath);
-                Console.WriteLine("Packet created. Sending...");
+                EmetteurUDP emetteur = new EmetteurUDP(ip, port, filePath);
+                Console.WriteLine("Paquet créé. Envoi en cours...");
                 await emetteur.DemarrerAsync();
-                Console.WriteLine("Packet sent.");
+                Console.WriteLine("Paquet envoyé.");
                 await emetteur.AttendreFINACKetEnvoyerACKAsync();
             }
             catch (Exception e)

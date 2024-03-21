@@ -14,37 +14,25 @@ namespace EmetteurReseau
             private string filePath;
             private UdpClient socket;
 
-        //public EmetteurUDP(string host, int port, string filePath)
-        //{
-        //    this.hostAddress = IPAddress.Parse(host);
-        //    this.port = port;
-        //    this.filePath = filePath;
-        //    this.socket = new UdpClient();
-        //}
-
-        public EmetteurUDP(string host, int port, string filePath)
-        {
-            // Si l'hôte est "localhost", résolvez-le en une adresse IP locale en fonction du type de socket
-            IPAddress address;
-            if (host.Equals("localhost", StringComparison.OrdinalIgnoreCase))
+            public EmetteurUDP(string host, int port, string filePath)
             {
-                // Utilisez la méthode appropriée pour déterminer si votre socket est IPv4 ou IPv6
-                address = Dns.GetHostAddresses(host)
-                    .FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork); // Pour IPv4
-                                                                                         // Changez InterNetwork en InterNetworkV6 si vous utilisez IPv6
-            }
-            else
-            {
-                address = IPAddress.Parse(host);
+                IPAddress address;
+                if (host.Equals("localhost", StringComparison.OrdinalIgnoreCase))
+                {
+                    address = Dns.GetHostAddresses(host)
+                        .FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork);
+                }
+                else
+                {
+                    address = IPAddress.Parse(host);
+                }
+                this.hostAddress = address;
+                this.port = port;
+                this.filePath = filePath;
+                this.socket = new UdpClient();
             }
 
-            this.hostAddress = address;
-            this.port = port;
-            this.filePath = filePath;
-            this.socket = new UdpClient();
-        }
-
-        public async Task DemarrerAsync()
+            public async Task DemarrerAsync()
             {
                 await EnvoyerSYNAsync();
                 await AttendreSYNACKAsync();

@@ -12,3 +12,4 @@ C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Deb
 C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.pdb
 C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.genruntimeconfig.cache
 C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\ref\EmetteurReseau.dll
+C:\Users\marcl\source\repos\psr12236\Projet_Reseau\Sender\EmetteruReseau\obj\Debug\net8.0\EmetteurReseau.sourcelink.json
